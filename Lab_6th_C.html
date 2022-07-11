@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6th experiment part-C : Scientific calculator</title>
+    <script type="text/javascript" src="6th_C_javacode.js"></script>
+    <style>
+        #main{
+            width: 800px;
+            height: 400px;
+            border: black 2px solid;
+            border-radius: 5px;
+            background-image: url(6th-1.jpg);
+            background-repeat: no-repeat;
+        }
+        #display{
+            width: 95%;
+            height: 70px;
+            border: solid blue 5px;
+            margin-top: 15px;
+            background-color: white;
+            font-size: 50px;
+        }
+        #heading{
+            text-align: center;
+
+        }
+        #side{
+            float: right;
+            position: relative;
+            bottom: 20px;
+        }
+        #image{
+            width: 400px;
+            height: 500px;
+        }
+        .btn{
+            width: 80px;
+            height: 40px;
+            margin: 5px;
+            font-size: 25px;
+        }
+        .btn:hover{
+            background-color: blue;
+        }
+        #button_contain{
+            width: 95%;
+            border: solid blue 5px;
+        }
+        #head_contain{
+            width: 97%;
+            border: 5px solid black;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <center><div id="head_contain"><h1 id="heading">Scientific-Calculator</h1></div></center>
+    <br><hr><br>
+    <aside id="side"><img src="Calculator.jpg" id="image"></aside>
+    <div id="main">
+        <center><div id="span_div">
+            <input type="text" name="display" id="display" value="" ></div>
+        </center><br>
+        <center>
+        <div id="button_contain">
+        <center><table>
+            <tr>
+                <td><button class="btn" onclick="x3()">x<sup>3</sup></button></td>
+                <td><button class="btn" onclick="cubert()"><sup>3</sup><span>&#8730</span>x</button></td>
+                <td><button class="btn" onclick="dis('1')">1</button></td>
+                <td><button class="btn" onclick="dis('2')">2</button></td>
+                <td><button class="btn" onclick="dis('3')">3</button></td>
+                <td><button class="btn" onclick="sin()">sin</button></td>
+                <td><button class="btn" onclick="cos()">cos</button></td>
+                <td><button class="btn" onclick="tan()">tan</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="x2()">x<sup>2</sup></button></td>
+                <td><button class="btn" onclick="sqrt()"><span>&#8730</span>x</button></td>
+                <td><button class="btn" onclick="dis('4')">4</button></td>
+                <td><button class="btn" onclick="dis('5')">5</button></td>
+                <td><button class="btn" onclick="dis('6')">6</button></td>
+                <td><button class="btn" onclick="asin()">sin<sup>-1</sup></button></td>
+                <td><button class="btn" onclick="acos()">cos<sup>-1</sup></button></td>
+                <td><button class="btn" onclick="atan()">tan<sup>-1</sup></button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="exp()">e<sup>x</sup></button></td>
+                <td><button class="btn" onclick="exp_10()">10<sup>x</sup></button></td>
+                <td><button class="btn" onclick="dis('7')">7</button></td>
+                <td><button class="btn" onclick="dis('8')">8</button></td>
+                <td><button class="btn" onclick="dis('9')">9</button></td>
+                <td><button class="btn" onclick="asinh()">asinh</button></td>
+                <td><button class="btn" onclick="acosh()">acosh</button></td>
+                <td><button class="btn" onclick="atanh()">atanh</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="ln()">ln</button></td>
+                <td><button class="btn" onclick="log()">log</button></td>
+                <td><button class="btn" onclick="dis('.')">.</button></td>
+                <td><button class="btn" onclick="dis('0')">0</button></td>
+                <td><button class="btn" onclick="del()">DEL</button></td>
+                <td><button class="btn" onclick="dis('+')">+</button></td>
+                <td><button class="btn" onclick="dis('-')">-</button></td>
+                <td><button class="btn" onclick="backSpace()">Back</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn" onclick="dis('(')">(</button></td>
+                <td><button class="btn" onclick="dis(')')">)</button></td>
+                <td><button class="btn" onclick="return inverse()">1/x</button></td>
+                <td><button class="btn" onclick="rem()">%</button></td>
+                <td><button class="btn" onclick="return factorial()">n!</button></td>
+                <td><button class="btn" onclick="dis('*')">X</button></td>
+                <td><button class="btn" onclick="dis('/')">/</button></td>
+                <td><button class="btn" onclick="solve()">=</button></td>
+                
+            </tr>
+        </table></center></div></center>
+    </div>
+</body>
+</html>
